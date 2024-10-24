@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="w-full min-h-[70px] py-10">
+    <header className="w-full container mx-auto min-h-[70px] py-10">
       <nav className="flex items-center justify-between">
         <span>
           <Link to={"/"}>
