@@ -6,23 +6,30 @@ import Root from "./routes/root";
 import About from "./routes/about";
 import NotFound from "./routes/not-found";
 import Logement from "./routes/logement";
+import Layout from "./components/layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-  {
-    path: "/:id",
-    element: <Logement />,
-  },
-  {
-    path: "/about",
-    element: <About />,
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Root />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+      {
+        path: "/:id",
+        element: <Logement />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+    ],
   },
 ]);
 
