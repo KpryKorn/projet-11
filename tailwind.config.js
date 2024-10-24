@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "red-kasa": "#FF6060",
+        "gray-kasa": "#f6f6f673",
+      },
+    },
   },
   plugins: [],
 };
