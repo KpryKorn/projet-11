@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         "red-kasa": "#FF6060",
-        "gray-kasa": "#f6f6f673",
+        "gray-kasa": "#f6f6f6",
       },
     },
   },
