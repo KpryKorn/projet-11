@@ -1,6 +1,6 @@
-import Hero from "../components/hero";
+import HeroBanner from "../components/hero-banner";
 import AboutImg from "../assets/about-img.png";
 
 export default function About() {
-  return <Hero img={AboutImg} />;
+  return <HeroBanner img={AboutImg} />;
 }
