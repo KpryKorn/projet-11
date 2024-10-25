@@ -36,7 +36,7 @@ export default function Header() {
             </svg>
           </Link>
         </span>
-        <div className="flex items-center gap-[57px] underline-offset-4">
+        <div className="flex items-center gap-[57px] underline-offset-4 text-2xl">
           <Link to={"/"} className="hover:underline">
             Accueil
           </Link>

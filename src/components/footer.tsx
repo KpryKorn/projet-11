@@ -30,7 +30,7 @@ export default function Footer() {
           />
         </svg>
       </Link>
-      <p>© 2020 Kasa. All rights reserved</p>
+      <p className="text-2xl">© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 }
