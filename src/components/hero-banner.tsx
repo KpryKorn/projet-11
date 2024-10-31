@@ -1,4 +1,10 @@
-export default function HeroBanner({ img, phrase }: { img: string; phrase?: string }) {
+export default function HeroBanner({
+  img,
+  phrase,
+}: {
+  img: string;
+  phrase?: string;
+}) {
   return (
     <section className="relative rounded-lg max-h-[230px] h-[230px] w-full overflow-hidden flex items-center justify-center mb-8">
       <img

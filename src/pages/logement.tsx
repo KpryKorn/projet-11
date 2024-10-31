@@ -1,5 +1,7 @@
 import { Navigate, useParams } from "react-router-dom";
 import { getLogementId } from "../lib/utils";
+import Carousel from "../components/carousel";
+import LogementDetails from "../components/logement-details";
 
 export default function Logement() {
   const { id } = useParams<{ id: string }>();
@@ -9,5 +11,10 @@ export default function Logement() {
     return <Navigate to={"*"} replace />;
   }
 
-  return <h1>Logement portant l'id {id}</h1>;
+  return (
+    <section>
+      <Carousel image={logement.cover} />
+      <LogementDetails {...logement} />
+    </section>
+  );
 }
