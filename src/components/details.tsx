@@ -1,11 +1,7 @@
-import { Logement } from "../lib/types";
-
 export default function Details({
-  logement,
   text,
   children,
 }: {
-  logement: Logement;
   text: string;
   children?: React.ReactNode;
 }) {

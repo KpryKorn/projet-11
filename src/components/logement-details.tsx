@@ -42,10 +42,10 @@ export default function LogementDetails({ ...logement }: Logement) {
       </div>
 
       <div className="flex items-center justify-between gap-[76px]">
-        <Details logement={logement} text="Description">
+        <Details text="Description">
           <p>{logement.description}</p>
         </Details>
-        <Details logement={logement} text="Equipements">
+        <Details text="Equipements">
           <ul>
             {logement.equipments.map((equipment, idx) => (
               <li key={idx}>{equipment}</li>
