@@ -7,6 +7,15 @@ export default {
         "red-kasa": "#FF6060",
         "gray-kasa": "#f6f6f6",
       },
+      container: {
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
     },
   },
   plugins: [],
