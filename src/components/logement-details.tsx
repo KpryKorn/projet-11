@@ -1,4 +1,5 @@
 import { Logement } from "../lib/types";
+import Details from "./details";
 import StarRating from "./star-rating";
 import Tag from "./tag";
 
@@ -40,9 +41,17 @@ export default function LogementDetails({ ...logement }: Logement) {
         </div>
       </div>
 
-      <div>
-        <details>Description</details>
-        <details>Equipements</details>
+      <div className="flex items-center justify-between gap-[76px]">
+        <Details logement={logement} text="Description">
+          <p>{logement.description}</p>
+        </Details>
+        <Details logement={logement} text="Equipements">
+          <ul>
+            {logement.equipments.map((equipment, idx) => (
+              <li key={idx}>{equipment}</li>
+            ))}
+          </ul>
+        </Details>
       </div>
     </article>
   );
