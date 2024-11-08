@@ -31,6 +31,7 @@ export default function Details({
           </svg>
         </span>
       </div>
+
       <div
         className={`transition-all duration-500 ease-in-out overflow-hidden ${
           isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"

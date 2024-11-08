@@ -41,7 +41,7 @@ export default function LogementDetails({ ...logement }: Logement) {
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-[76px]">
+      <div className="flex items-start justify-between gap-[76px]">
         <Details text="Description">
           <p>{logement.description}</p>
         </Details>

@@ -6,7 +6,7 @@ export default function HeroBanner({
   phrase?: string;
 }) {
   return (
-    <section className="relative rounded-lg max-h-[230px] h-[140px] md:h-[230px] w-full overflow-hidden flex items-center justify-center mb-8">
+    <section className="relative rounded-lg max-h-[230px] h-[223px] md:h-[223px] w-full overflow-hidden flex items-center justify-center mb-8">
       <img
         className="absolute top-0 left-0 h-full w-full object-cover brightness-[35%]"
         src={img}
