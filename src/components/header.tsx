@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="w-full container mx-auto min-h-[70px] py-10">
+    <header className="w-full container mx-auto min-h-[70px] py-10 uppercase md:capitalize">
       <nav className="flex items-center justify-between">
         <span>
           <Link to={"/"}>
@@ -36,7 +36,7 @@ export default function Header() {
             </svg>
           </Link>
         </span>
-        <div className="flex items-center gap-[57px] underline-offset-4 text-2xl">
+        <div className="flex items-center gap-[37px] md:gap-[57px] underline-offset-4 text-lg md:text-2xl">
           <Link to={"/"} className="hover:underline">
             Accueil
           </Link>
