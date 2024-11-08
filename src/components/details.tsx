@@ -15,7 +15,7 @@ export default function Details({
         className="rounded-lg bg-red-kasa flex p-2 justify-between items-center cursor-pointer"
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <span className="text-white font-medium">{text}</span>
+        <span className="text-white font-medium text-lg">{text}</span>
         <span className={`transition-transform ${isOpen ? "rotate-180" : ""}`}>
           <svg
             width="25"
