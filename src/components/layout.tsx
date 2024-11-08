@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <main className="min-h-screen container mx-auto">
+      <main className="container mx-auto">
         <Outlet />
       </main>
       <Footer />
