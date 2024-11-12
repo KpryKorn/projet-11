@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <HeroBanner img={AboutImg} />
-      <section className="px-[10%]">
+      <section className="md:px-[10%]">
         {ABOUT_TEXT.map((text, idx) => (
           <Details key={idx} text={text.title}>
             {text.description}

@@ -10,7 +10,7 @@ export default function Details({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex-1 rounded-lg mb-4">
+    <div className="flex-1 rounded-lg mb-4 w-full">
       <div
         className="rounded-lg bg-red-kasa flex p-2 justify-between items-center cursor-pointer"
         onClick={() => setIsOpen((prev) => !prev)}

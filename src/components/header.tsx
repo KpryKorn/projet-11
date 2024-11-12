@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="w-full container mx-auto min-h-[70px] py-10 uppercase md:capitalize">
-      <nav className="flex items-center justify-between">
+      <nav className="flex items-center justify-between gap-4">
         <span>
           <Link to={"/"}>
             <svg
@@ -12,6 +12,7 @@ export default function Header() {
               viewBox="0 0 211 68"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-3/4 md:w-full"
             >
               <path
                 d="M20.5745 34.6485L9.34014 46.1362V62.2561H0.5V0H9.34014V34.8338L42.859 0H52.9883L26.6521 27.9782L54.83 62.2561H44.5165L20.5745 34.6485Z"
@@ -36,11 +37,11 @@ export default function Header() {
             </svg>
           </Link>
         </span>
-        <div className="flex items-center gap-[37px] md:gap-[57px] underline-offset-4 text-lg md:text-2xl">
+        <div className="flex items-center gap-[20px] sm:gap-[37px] md:gap-[57px] underline-offset-4 text-sm sm:text-lg md:text-2xl">
           <Link to={"/"} className="hover:underline">
             Accueil
           </Link>
-          <Link to={"/about"} className="hover:underline">
+          <Link to={"/about"} className="hover:underline text-nowrap">
             A Propos
           </Link>
         </div>
