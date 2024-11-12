@@ -13,7 +13,7 @@ export default function Logement() {
 
   return (
     <section>
-      <Carousel image={logement.cover} />
+      <Carousel slides={logement.pictures} />
       <LogementDetails {...logement} />
     </section>
   );
